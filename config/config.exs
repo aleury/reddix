@@ -8,7 +8,8 @@
 import Config
 
 config :reddix,
-  ecto_repos: [Reddix.Repo]
+  ecto_repos: [Reddix.Repo],
+  generators: [binary_id: true]
 
 # Configures the endpoint
 config :reddix, ReddixWeb.Endpoint,

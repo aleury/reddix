@@ -18,6 +18,8 @@ defmodule ReddixWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    resources "/threads", ThreadController
   end
 
   # Other scopes may use custom stacks.
